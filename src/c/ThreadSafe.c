@@ -75,4 +75,12 @@ void freeMap(ThreadSafeMap* map) {
 
 int main() {
     ThreadSafeMap* map = createMap();
-   
+    put(map, "key1", 10);
+    put(map, "key2", 20);
+
+    printf("key1 -> %d\n", get(map, "key1"));
+    printf("key2 -> %d\n", get(map, "key2"));
+
+    freeMap(map);
+    return 0;
+}
