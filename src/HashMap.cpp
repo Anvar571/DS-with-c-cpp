@@ -58,6 +58,11 @@ int main() {
     HashMap<std::string, int> map;
     map.put("key1", 10);
     map.put("key2", 20);
+    map.put("key3", 20);
+
+    map.getSize();
+
+    std::cout << "Map size " << map.getSize() << std::endl;
 
     int value;
     if (map.get("key1", value)) {
